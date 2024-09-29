@@ -1,0 +1,11 @@
+sequenceDiagram
+    attacker->>+webserver: sends out a ton of request for access with a botnet
+    attacker->>+webserver: firewall realizes a attack is occuring and blocks some ip addressess
+    webserver-->>-attacker: firewall fails and the webserver becomes overwelemed
+    webserver-->>-attacker: webserver becomes unable to operate due to volume of req
+    attacker-->>-webserver: sends demand
+###Explanation
+###a botnet is a series of computers a attacker may have access to either through malware or othermeans
+### the firewall begins to block suspicious ips but eventualy fails and begins to block all ips due to sheer volume
+### the webserver fails taking access away from all users 
+### attacker generaly sends a demand either info or money. 
